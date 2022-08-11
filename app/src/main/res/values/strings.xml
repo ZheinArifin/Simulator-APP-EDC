@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simulator EDC</string>
+    <string-array name="bank_group">
+        <item>BCA</item>
+        <item>BNI</item>
+        <item>Mandiri</item>
+        <item>BRI</item>
+        <item>BTN</item>
+    </string-array>
+</resources>

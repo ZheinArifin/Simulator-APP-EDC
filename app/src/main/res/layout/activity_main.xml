@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- Header -->
+            <LinearLayout
+                android:onClick="back"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_custom"
+                android:padding="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="UI Payment"
+                    android:textSize="16dp"
+                    android:drawableLeft="@drawable/ic_back"
+                    android:drawableTint="@color/white"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Package Name">
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_package"
+                    android:text="@string/packages"
+                    android:textSize="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Class Name">
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_class"
+                    android:text="@string/packages_class"
+                    android:textSize="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Amount">
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_amount"
+                    android:textSize="15dp"
+                    android:paddingTop="10dp"
+                    android:inputType="number"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Tip Amount">
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_tipAmount"
+                    android:textSize="15dp"
+                    android:paddingTop="10dp"
+                    android:inputType="number"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Quantity">
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_quantity"
+                    android:textSize="15dp"
+                    android:paddingTop="10dp"
+                    android:inputType="number"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Liter">
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_liter"
+                    android:textSize="15dp"
+                    android:paddingTop="10dp"
+                    android:inputType="number"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Produk">
+                <!--this is the actual edit text which takes the input-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_produk"
+                    android:textSize="15dp"
+                    android:inputType="text"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:background="@drawable/outline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Message"
+                    android:fontFamily="times new roman"/>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:paddingBottom="10dp"
+                        android:id="@+id/txt_message"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="times new roman"/>
+                </ScrollView>
+            </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingRight="10dp">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Package"/>-->
+
+<!--                    <TextView-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Class Java"/>-->
+
+<!--                    <TextView-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+
+<!--                        android:text="Amount"/>-->
+<!--                    <TextView-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Tip Amount"/>-->
+<!--                    <TextView-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Quantity"/>-->
+
+<!--                    <TextView-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Liter"/>-->
+
+<!--                    <TextView-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Produk"/>-->
+
+<!--                    <TextView-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="IP Addres"/>-->
+
+<!--                    <TextView-->
+<!--                        android:gravity="center|left"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="Server Port"/>-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <EditText-->
+<!--                        android:padding="5dp"-->
+<!--                        android:inputType="text"-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:background="@drawable/input_rounded"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:focusable="true"-->
+<!--                        android:text="@string/packages"-->
+<!--                        android:hint="Package"/>-->
+
+<!--                    <EditText-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:id="@+id/txt_class"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:inputType="text"-->
+<!--                        android:background="@drawable/input_rounded"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:focusable="true"-->
+<!--                        android:text="@string/packages_class"-->
+<!--                        android:hint="class"/>-->
+
+<!--                    <EditText-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:id="@+id/txt_amount"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:inputType="numberDecimal"-->
+<!--                        android:background="@drawable/input_rounded"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:focusable="true"-->
+<!--                        android:hint="Amount"/>-->
+
+<!--                    <EditText-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:id="@+id/txt_tipAmount"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:inputType="numberDecimal"-->
+<!--                        android:background="@drawable/input_rounded"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:hint="Tip Amount"/>-->
+
+<!--                    <EditText-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:id="@+id/txt_quantity"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:inputType="number"-->
+<!--                        android:background="@drawable/input_rounded"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:hint="Quantity"/>-->
+
+<!--                    <EditText-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:id="@+id/txt_liter"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:inputType="number"-->
+<!--                        android:background="@drawable/input_rounded"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:hint="Liter"/>-->
+
+<!--                    <EditText-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:id="@+id/txt_produk"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:inputType="text"-->
+<!--                        android:background="@drawable/input_rounded"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:hint="Product"/>-->
+
+<!--                    <EditText-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:id="@+id/txt_ipPort"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:inputType="phone"-->
+<!--                        android:background="@drawable/input_rounded"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:text="@string/IPPORT"-->
+<!--                        android:hint="Ip Address"/>-->
+
+<!--                    <EditText-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:id="@+id/txt_serverPort"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:text="@string/SERVERPORT"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:inputType="numberDecimal"-->
+<!--                        android:background="@drawable/input_rounded"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:hint="Server Port"/>-->
+
+
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:padding="10dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal">-->
+<!--                <Button-->
+<!--                    android:id="@+id/conect"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Connect"/>-->
+<!--                <TextView-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Disconnect"-->
+<!--                    android:id="@+id/status"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"/>-->
+
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="15dp"
+        app:fabSize="normal"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

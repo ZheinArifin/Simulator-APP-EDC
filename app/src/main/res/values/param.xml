@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="packages">com.pax_pm_ndp.edc</string>
+    <string name="packages_class">com.pax_pm_ndp.pay.MainActivity</string>
+    <string name="SERVERPORT">3003</string>
+    <string name="IPPORT">10.151.0.249</string>
+</resources>
