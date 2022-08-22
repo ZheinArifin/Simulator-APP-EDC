@@ -99,11 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (requestCode){
             case uiRequestCode:
-                SharedPreferences sharedpreferences = getSharedPreferences("MyPrefs", this.MODE_PRIVATE);
 
-                SharedPreferences.Editor editor = sharedpreferences.edit();
-                editor.putString("data", data.getStringExtra("Data"));
-                editor.commit();
 
                 String dt = data.getStringExtra("Data");
                 String respon = data.getStringExtra("Respon");
