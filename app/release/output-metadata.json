@@ -11,9 +11,9 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 8,
-      "versionName": "1.7",
-      "outputFile": "SimulatorEDC1.7.apk"
+      "versionCode": 9,
+      "versionName": "1.8",
+      "outputFile": "SimulatorEDC1.8.apk"
     }
   ],
   "elementType": "File"
