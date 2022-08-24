@@ -81,6 +81,7 @@
                     android:layout_marginTop="5dp"
                     android:background="@drawable/custom_input"
                     android:hint=""
+                    android:maxLength="20"
                     android:inputType="number"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp" />

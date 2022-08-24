@@ -188,14 +188,70 @@ public class TransferActivity extends AppCompatActivity implements View.OnClickL
     public String codeBank(String bank){
         if(bank.equals("BNI"))
             return "009";
-        else if(bank.equals("Mandiri"))
+        else if(bank.equals("BANK MANDIRI"))
             return "008";
-        else if(bank.equals("BRI"))
+        else if(bank.equals("BANK BRI"))
             return "002";
-        else if(bank.equals("BCA"))
+        else if(bank.equals("BANK BCA"))
             return "014";
-        else if(bank.equals("BTN"))
+        else if(bank.equals("BANK BTN"))
             return "200";
+        else if(bank.equals("BANK BJB"))
+            return "110";
+        else if(bank.equals("BANK BRI"))
+            return "002";
+        else if(bank.equals("BANK CITY BANK"))
+            return "031";
+        else if(bank.equals("BANK NOBU"))
+            return "503";
+        else if(bank.equals("BANK MISTIKA"))
+            return "151";
+        else if(bank.equals("BANK NTT"))
+            return "130";
+        else if(bank.equals("BANK DINAR"))
+            return "526";
+        else if(bank.equals("BANK PANIN"))
+            return "019";
+        else if(bank.equals("BANK PAPUA"))
+            return "032";
+        else if(bank.equals("BANK NTB"))
+            return "128";
+        else if(bank.equals("BANK SYARIAH BUKOPIN"))
+            return "521";
+        else if(bank.equals("BANK SYARIAH INDONESIA"))
+            return "451";
+        else if(bank.equals("BANK MEGA"))
+            return "426";
+        else if(bank.equals("BANK KALSEL"))
+            return "122";
+        else if(bank.equals("BANK OCBC"))
+            return "028";
+        else if(bank.equals("BANK MEGA SYARIAH"))
+            return "506";
+        else if(bank.equals("BANK MAYAPADA"))
+            return "097";
+        else if(bank.equals("BANK BTPN"))
+            return "213";
+        else if(bank.equals("BANK BTPN SYARIAH"))
+            return "547";
+        else if(bank.equals("BANK CIMB NIAGA"))
+            return "022";
+        else if(bank.equals("BANK PERMATA"))
+            return "013";
+        else if(bank.equals("BANK BPD DIY"))
+            return "112";
+        else if(bank.equals("BANK JATIM"))
+            return "114";
+        else if(bank.equals("BANK KALTIMTARA"))
+            return "124";
+        else if(bank.equals("BANK SULSELBAR"))
+            return "126";
+        else if(bank.equals("BANK DANAMON"))
+            return "011";
+        else if(bank.equals("BANK JAGO"))
+            return "542";
+        else if(bank.equals("BANK MYBANK"))
+            return "016";
         else
             return "0";
     }
