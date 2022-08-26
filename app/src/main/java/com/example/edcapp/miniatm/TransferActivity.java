@@ -186,7 +186,7 @@ public class TransferActivity extends AppCompatActivity implements View.OnClickL
     }
 
     public String codeBank(String bank){
-        if(bank.equals("BNI"))
+        if(bank.equals("BANK BNI"))
             return "009";
         else if(bank.equals("BANK MANDIRI"))
             return "008";
