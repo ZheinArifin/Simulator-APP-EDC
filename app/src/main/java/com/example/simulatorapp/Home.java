@@ -1,4 +1,4 @@
-package com.example.edcapp;
+package com.example.simulatorapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,8 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.edcapp.miniatm.TransferActivity;
-import com.example.edcapp.wifi.TestWifi;
+import com.example.simulatorapp.miniatm.TransferActivity;
+import com.example.simulatorapp.wifi.TestWifi;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

@@ -1,4 +1,4 @@
-package com.example.edcapp.miniatm;
+package com.example.simulatorapp.miniatm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,12 +17,10 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.edcapp.R;
-import com.example.edcapp.tools.MyTools;
+import com.example.simulatorapp.R;
+import com.example.simulatorapp.tools.MyTools;
 
 import java.text.NumberFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Locale;
 
 public class SetorTunai extends AppCompatActivity implements View.OnClickListener {

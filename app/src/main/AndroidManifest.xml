@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.edcapp">
+    package="com.example.simulatorapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,22 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EDCAPP">
         <activity
-            android:name=".miniatm.CekSaldo"
+            android:name="com.example.simulatorapp.miniatm.CekSaldo"
             android:exported="false" />
         <activity
-            android:name=".wifi.TestWifi"
+            android:name="com.example.simulatorapp.wifi.TestWifi"
             android:exported="true" />
         <activity
-            android:name=".miniatm.SetorTunai"
+            android:name="com.example.simulatorapp.miniatm.SetorTunai"
             android:exported="false" />
         <activity
-            android:name=".miniatm.TarikTunai"
+            android:name="com.example.simulatorapp.miniatm.TarikTunai"
             android:exported="false" />
         <activity
-            android:name=".miniatm.TransferActivity"
+            android:name="com.example.simulatorapp.miniatm.TransferActivity"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name="com.example.simulatorapp.Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +36,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.simulatorapp.MainActivity"
             android:exported="true" />
     </application>
 

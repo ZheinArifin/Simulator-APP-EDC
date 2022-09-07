@@ -1,4 +1,4 @@
-package com.example.edcapp.tools;
+package com.example.simulatorapp.tools;
 
 import java.text.NumberFormat;
 import java.util.Locale;

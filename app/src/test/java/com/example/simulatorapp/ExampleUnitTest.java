@@ -1,4 +1,4 @@
-package com.example.edcapp;
+package com.example.simulatorapp;
 
 import org.junit.Test;
 

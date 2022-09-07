@@ -1,16 +1,14 @@
-package com.example.edcapp.wifi;
+package com.example.simulatorapp.wifi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.edcapp.MainActivity;
-import com.example.edcapp.R;
+import com.example.simulatorapp.R;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

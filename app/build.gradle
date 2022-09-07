@@ -6,7 +6,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.edcapp"
+        applicationId "com.example.simulatorapp"
         minSdk 21
         targetSdk 32
         versionCode 9

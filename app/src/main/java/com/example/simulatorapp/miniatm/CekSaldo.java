@@ -1,4 +1,4 @@
-package com.example.edcapp.miniatm;
+package com.example.simulatorapp.miniatm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.edcapp.R;
+import com.example.simulatorapp.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
