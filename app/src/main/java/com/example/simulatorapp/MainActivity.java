@@ -13,7 +13,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.simulatorapp.base.BaseApp;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.pax.dal.IPrinter;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String currentDateandTime, Status;
     Locale INDONESIA = new Locale("in", "ID");
     public static final int uiRequestCode = 1;
+    private IPrinter printer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +47,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         liter       = findViewById(R.id.txt_liter);
         product     = findViewById(R.id.txt_produk);
         txtMessage  = findViewById(R.id.txt_message);
-
         txt_package = findViewById(R.id.txt_package);
-
-        txt_class = findViewById(R.id.txt_class);
+        txt_class   = findViewById(R.id.txt_class);
         btn_send    = findViewById(R.id.btn_send);
+
+        printer     = BaseApp.getDal().getPrinter();
 
         btn_send.setOnClickListener(this);
         SimpleDateFormat sdf = new SimpleDateFormat("ss", Locale.getDefault());
@@ -108,10 +111,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.e("error", "data respon = "+requestCode );
                 break;
         }
+    }
 
-
+    void printMessage(){
+        printer.init();
 
     }
+
 
     void status(String message){
         status.setText(message);
