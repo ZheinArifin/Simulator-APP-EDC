@@ -4,16 +4,16 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.testwifi",
+  "applicationId": "com.example.edcapp",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 1,
-      "versionName": "1.0",
-      "outputFile": "TestWIFI1.0.apk"
+      "versionCode": 9,
+      "versionName": "1.8",
+      "outputFile": "SimulatorEDC1.8.apk"
     }
   ],
   "elementType": "File"

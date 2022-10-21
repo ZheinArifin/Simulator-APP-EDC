@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 SimpleDateFormat sdf = new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault());
                 Intent intent = new Intent();
                 intent.putExtra("app", "com.pax_pm_ndp.edc");
-                intent.putExtra("menu", "settlement");
+                intent.putExtra("menu", "sale");
                 intent.putExtra("amount", txt_amount.getText().toString());
                 intent.putExtra("DateTime", sdf.format(new Date()));
                 intent.putExtra("TransId", "PURCHASE");

@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">Simulator EDC</string>
+    <string-array name="bank_group">
+        <item>BANK BCA</item>
+        <item>BANK BNI</item>
+        <item>BANK MANDIRI</item>
+        <item>BANK BRI</item>
+        <item>BANK BTN</item>
+        <item>BANK BJB</item>
+        <item>BANK BRI</item>
+        <item>BANK CITY BANK</item>
+        <item>BANK NOBU</item>
+        <item>BANK MESTIKA</item>
+        <item>BANK NTT</item>
+        <item>BANK DINAR</item>
+        <item>BANK PANIN</item>
+        <item>BANK PAPUA</item>
+        <item>BANK NTB</item>
+        <item>BANK SYARIAH BUKOPIN</item>
+        <item>BANK SYARIAH INDONESIA</item>
+        <item>BANK MEGA</item>
+        <item>BANK KALSEL</item>
+        <item>BANK OSBC</item>
+        <item>BANK MEGA SYARIAH</item>
+        <item>BANK MAYAPADA</item>
+        <item>BANK BTPN</item>
+        <item>BANK BTPN SYARIAH</item>
+        <item>BANK CIMB NIAGA</item>
+        <item>BANK PERMATA</item>
+        <item>BANK BPD DIY</item>
+        <item>BANK JATIM</item>
+        <item>BANK KALTIMTARA</item>
+        <item>BANK SULSELBAR</item>
+        <item>BANK DANAMON</item>
+
+
+    </string-array>
 </resources>
